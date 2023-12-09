@@ -1,0 +1,20 @@
+// Write a program to calculate the average value of array elements.
+// Benjamin Medellin
+class HelloWorld {
+    public static void main(String[] args) {
+        // 1 - Declare and allocate the array.
+        int arrayNum[] = {1, 2, 3, 4, 5};
+        
+        int sum = 0; // variable that will hold the sum of array.
+        // for-each loop to get sum of array.
+        for (int i: arrayNum) { sum += i; }
+        
+        int average = 0; // variable to hold average.
+        average = (sum / arrayNum.length);
+        
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+        
+        
+    }
+}

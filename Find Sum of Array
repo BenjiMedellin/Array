@@ -1,0 +1,32 @@
+// This will get the sum of an array.
+class HelloWorld {
+    public static void main(String[] args) {
+        // 1- Declare and allocate an array.
+        int arrayNum[] = new int[6];
+        int arrayDum[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // literal array
+        
+        // 2- Populate the array.
+        arrayNum[0] = 20;
+        arrayNum[1] = 10;
+        arrayNum[2] = 40;
+        arrayNum[3] = 50;
+        arrayNum[4] = 5;
+        arrayNum[5] = 5;
+        
+        // 3- We need to loop through the array and find sum.
+        // Using a for loop.
+        int sum1 = 0;
+        for(int i = 0; i < arrayNum.length; i++) {
+            sum1 += arrayNum[i];
+        }
+        
+        // Using a for-each loop
+        int sum2 = 0;
+        for(int i: arrayDum) {
+            sum2 += i;
+        }
+        
+        System.out.println("Sum: " + sum1);
+        System.out.println("Sum: " + sum2);
+    }
+}
